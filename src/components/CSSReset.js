@@ -9,21 +9,10 @@ export const CSSReset = createGlobalStyle`
   }
   body {
     font-family: sans-serif;
+    background-color: #111018;
+    color:white;
   }
   /* NextJS */
-  html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-  body {
-    display: flex;
-    flex: 1;
-  }
-  #__next {
-    display: flex;
-    flex: 1;
-  }
   /* Globals */
   button,
   a {
@@ -35,4 +24,10 @@ export const CSSReset = createGlobalStyle`
       opacity: .5;
     }
   }
+  .cabecalho, .container-sobre, .container-formacao, .container-desc-links{
+    background-color: #111018;
+    border: 2px solid #312F34;
+    border-radius: 20px;
+    
+  } 
 `;
