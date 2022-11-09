@@ -1,5 +1,17 @@
 {
     "name" : "Ariele Martins",
     "job": "Developer Fullstack",
-    "github": "ArieleMartins"
+    "github": "ArieleMartins",
+    "projetos": {
+        "js": [
+            {
+                "imagem": "aluraFlix.png",
+                "alt": "Projeto AluraFlix - Desenvolvido durante a imersão dev da Alura",
+                "tec": ["HTML", "CSS", "JS"],
+                "desc": { "name" : "AluraFlix", "desc" : "Projeto feito durante a imersão dev Alura. Site onde você pode adicionar capas de seus filmes/séries/hqs favoritos e separa-los por genêro."},
+                "href": "https://arielemartins.github.io/exercicios_js/aluraFlix_imers%C3%A3oDev/",
+                "github": "https://github.com/ArieleMartins/exercicios_js/tree/master/aluraFlix_imers%C3%A3oDev"
+            }
+        ]
+    }
 }

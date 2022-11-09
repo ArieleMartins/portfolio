@@ -1,13 +1,17 @@
 import config from "../config.json"
 import styled from "styled-components"
-
-var estilo = {color:"blue", backgroundColor: 'red'};
+import { CSSReset } from "../src/components/CSSReset";
 
 function HomePage(){
     return (
-        <div>
-            <Main/>
-        </div>
+        <>
+            <CSSReset/>
+            <div>
+                <Main/>
+                <Projetos projetos={config.projetos}/>
+            </div>
+        </>
+        
     );
 }
 
@@ -56,10 +60,7 @@ function Main(){
         <StyledMain>
             <div >
                 <div >
-                    <i class="fa-regular fa-sun" id="icon-sun"></i>
-                    <div>
-                    </div>
-                    <i class="fa-solid fa-moon" id="icon-moon"></i>
+                    
                 </div>
 
             </div>
@@ -75,12 +76,9 @@ function Main(){
                     </div>
                 </div>
                 <div className="container-links">
-                    <a href="https://github.com/ArieleMartins" target="_blank"><i class="fa-brands fa-github-alt"
-                            title="GitHub"></i></a>
-                    <a href="https://www.linkedin.com/in/ariele-martins-b427541bb/" target="_blank" title="Linkedin"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://wa.me/11967949763" target="_blank" title="WhatsApp"><i
-                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/ArieleMartins" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/ariele-martins-b427541bb/" target="_blank" title="Linkedin"></a>
+                    <a href="https://wa.me/11967949763" target="_blank" title="WhatsApp"></a>
                 </div>
                 <div className="container-skills">
                     <div className="container-skill">
@@ -94,7 +92,7 @@ function Main(){
                 </div>
                 <div className="container-email">
                     <div >
-                        <i class="fa-regular fa-envelope"></i><span>ariele.cmmelo@gmail.com</span>
+                        <span>ariele.cmmelo@gmail.com</span>
                     </div>
                 </div>
                 <div >
@@ -103,4 +101,25 @@ function Main(){
             </div>
         </StyledMain>
     );
+}
+
+function Projetos(props){
+    const listProjects = Object.keys(props.projetos)
+    return (
+        <div>
+            {listProjects.map((typeProject) => {
+                const dadosProjeto = props.projetos[typeProject]
+                return dadosProjeto.map((proj)=>{
+                    return (
+                        <div>
+                            <img src={proj.imagem}/>
+                            <span>{proj.desc.name}</span>
+                            <a href={proj.href}>Click</a>
+                        </div>
+                    )
+                })
+            })}
+        </div>
+        
+    )
 }
