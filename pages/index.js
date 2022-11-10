@@ -1,7 +1,7 @@
 import config from "../config.json"
 import styled from "styled-components"
 import Main from "../src/components/views/Main"
-import { CSSReset } from "../src/components/CSSReset";
+
 import Projetos from "../src/components/views/Projetos";
 
 const StyleContainer = styled.div`
@@ -20,7 +20,7 @@ const StyleFlex = styled.div`
 function HomePage(){
     return (
         <>
-            <CSSReset/>
+            
             <StyleContainer>
                 <Main dados={config}/>
                 <StyleFlex>

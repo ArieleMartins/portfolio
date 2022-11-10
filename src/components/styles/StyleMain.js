@@ -5,10 +5,9 @@ width: 341px;
 height: 996px;
 display: flex;
 flex-direction: column;
-background-color: #111018;
-border: 2px solid #312F34;
+background-color: ${({theme}) => theme.backgroundContainer};
+border: 2px solid ${({theme}) => theme.colorBorder};
 border-radius: 20px;
-color:white;
 
 .container-info-perfil{
     display: flex;
@@ -47,7 +46,8 @@ color:white;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: #312F34;
+    background: ${({theme}) => theme.backCargo};
+    color: white;
     border-radius: 20px;
     font-size: 13px;
     text-transform: uppercase;
@@ -64,7 +64,7 @@ color:white;
     column-gap: 45px;
 }
 .container-links a{
-    color: white;
+    color: ${({theme}) => theme.fontColor};
     text-decoration: none;
 }
 .container-links a:hover{

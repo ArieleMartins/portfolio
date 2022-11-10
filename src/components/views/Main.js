@@ -1,4 +1,5 @@
 import StyledMain from "../styles/StyleMain";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 function Main(config){
     const dados = config.dados
@@ -8,9 +9,7 @@ function Main(config){
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div >
-                <div >
-
-                </div>
+                <DarkModeSwitch/>
 
             </div>
             <div className="container-info-perfil">
