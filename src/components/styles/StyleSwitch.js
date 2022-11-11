@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledSwitch = styled.div`
-  background-color: #333333;
+  float: right;
+  background-color: ${({theme}) => theme.backgroundTheme};
   border: 0;
   padding: 3px;
   font-size: 12px;
@@ -18,8 +19,8 @@ const StyledSwitch = styled.div`
   
   label:before {
     content: "";
-    background-color: #fafafa;
-    border: 1px solid #333333;
+    background-color: ${({theme}) => theme.colorBallTheme};
+    border: 1px solid ${({theme}) => theme.backgroundTheme};
     width: 24px;
     height: 24px;
     border-radius: 100%;

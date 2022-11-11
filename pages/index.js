@@ -1,7 +1,7 @@
 import config from "../config.json"
 import styled from "styled-components"
 import Main from "../src/components/views/Main"
-
+import Sobre from "../src/components/views/Sobre"
 import Projetos from "../src/components/views/Projetos";
 
 const StyleContainer = styled.div`
@@ -24,6 +24,7 @@ function HomePage(){
             <StyleContainer>
                 <Main dados={config}/>
                 <StyleFlex>
+                    <Sobre sobre={config.sobre}/>
                     <Projetos projetos={config.projetos}/>
                 </StyleFlex>
             </StyleContainer>

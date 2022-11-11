@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledGridProjects = styled.div`
 width: 1002px;
-display:flex;
+display:none;
 background-color: #111018;
 border: 2px solid #312F34;
 border-radius: 20px;

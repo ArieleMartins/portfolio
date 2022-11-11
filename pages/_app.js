@@ -9,14 +9,18 @@ const theme = {
         fontColor : 'white',
         backgroundContainer: '#111018',
         colorBorder: '#312F34',
-        backCargo: '#312F34'
+        backCargo: '#312F34',
+        backgroundTheme: "white",
+        colorBallTheme:"#333333"
     },
     light:{
         backgroundBase: 'rgba(0 ,0 ,0 ,0.1)',
         fontColor: 'black',
         backgroundContainer: 'white',
         colorBorder: 'black',
-        backCargo: 'black'
+        backCargo: 'black',
+        backgroundTheme: '#333333',
+        colorBallTheme: 'white'
     }
 
 };

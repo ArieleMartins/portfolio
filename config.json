@@ -54,8 +54,41 @@
             }
         ]
     },
-    "ilustration" : {
-        "href" : "https://user-images.githubusercontent.com/83427685/200915387-2d58df48-c6d5-4d91-bdfa-a2f0b93f44f5.png",
-        "alt" : "Ilustrador: Maison Melo"
+    "sobre": {
+        "ilustration" : {
+            "href" : "https://user-images.githubusercontent.com/83427685/200915387-2d58df48-c6d5-4d91-bdfa-a2f0b93f44f5.png",
+            "alt" : "Ilustrador: Maison Melo"
+        },
+        "objetivo": "Desenvolvedor FullStack / Back-End",
+        "sobre" : "Olá, me chamo Ariele e meu primeiro contato com programação foi em um curso a distância de desenvolvimento de games, onde comecei a mexer com as linguagens c# e java, porém não me identifiquei com a área de games. Então, me matriculei no curso técnico, onde conheci outras áreas de T.I e descobri que programação é exatamente o que quero seguir como profissão. Hoje, continuo estudando para seguir a carreira como desenvolvedora Full Stack / Back-End.",
+        "formacao": [
+            {
+                "curso": "Técnico em Informática",
+                "periodo": "2020 - 2022",
+                "instituicao" : "Senac"
+            },
+            {
+                "curso": "Ensino Médio",
+                "periodo": "2014 - 2016",
+                "instituicao" : "Lourival Gomes Machado"
+            }
+        ],
+        "cursos": [
+            {
+                "curso": "Trilha Fundamentar - Fundamentar",
+                "periodo": "Atualmente",
+                "instituicao" : "Rocketseat"
+            },
+            {
+                "curso": "Trilha Fundamentar - Discover",
+                "periodo": "2022 - 2h23",
+                "instituicao" : "Rocketseat"
+            },
+            {
+                "curso": "Produções de Websites Expert - Front-End",
+                "periodo": "2021 - 100 horas",
+                "instituicao" : "Senac"
+            }
+        ]
     }
 }

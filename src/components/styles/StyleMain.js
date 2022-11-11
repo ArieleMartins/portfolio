@@ -8,6 +8,9 @@ flex-direction: column;
 background-color: ${({theme}) => theme.backgroundContainer};
 border: 2px solid ${({theme}) => theme.colorBorder};
 border-radius: 20px;
+.container-tema{
+    padding: 20px;
+}
 
 .container-info-perfil{
     display: flex;
