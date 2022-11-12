@@ -12,6 +12,7 @@ const StyledSwitch = styled.div`
   justify-content: space-around;
   border-radius: 10000px;
   position: relative;
+  color: white;
   label {
     width: 50px;
   }

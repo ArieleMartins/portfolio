@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Main from "../src/components/views/Main"
 import Sobre from "../src/components/views/Sobre"
 import Projetos from "../src/components/views/Projetos";
+import Header from "../src/components/views/Header";
 
 const StyleContainer = styled.div`
     display: flex;
@@ -24,6 +25,7 @@ function HomePage(){
             <StyleContainer>
                 <Main dados={config}/>
                 <StyleFlex>
+                    <Header/>
                     <Sobre sobre={config.sobre}/>
                     <Projetos projetos={config.projetos}/>
                 </StyleFlex>

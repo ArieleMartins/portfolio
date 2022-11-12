@@ -20,10 +20,7 @@ export const CSSReset = createGlobalStyle`
     text-decoration: none;
     opacity: 1;
     transition: .3s;
-    &:hover,
-    &:focus {
-      opacity: .5;
-    }
+    
   }
   .cabecalho, .container-sobre, .container-formacao, .container-desc-links{
     background-color: #111018;
