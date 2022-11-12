@@ -1,3 +1,4 @@
+import React from 'react'
 import config from "../config.json"
 import styled from "styled-components"
 import Main from "../src/components/views/Main"
@@ -18,16 +19,25 @@ const StyleFlex = styled.div`
     flex-direction: column;
     row-gap: 15px;
 `
+
 function HomePage(){
+    const [visible, setVisible] = React.useState(false)
+
     return (
         <>
             
             <StyleContainer>
                 <Main dados={config}/>
                 <StyleFlex>
-                    <Header/>
-                    <Sobre sobre={config.sobre}/>
-                    <Projetos projetos={config.projetos}/>
+                    
+                    <Header setVisible={setVisible}/>
+                    {
+                        visible ?(
+                            <Projetos projetos={config.projetos}/>
+                        ): (
+                            <Sobre sobre={config.sobre} />
+                        )
+                    }
                 </StyleFlex>
             </StyleContainer>
         </>
