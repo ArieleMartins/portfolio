@@ -22,35 +22,13 @@ function Sobre(props){
                 <div className="formacao">
                     <h3>Formação</h3>
                     <ul>
-                        <li>
-                            <p>2020 - 2022</p>
-                            <p>Senac</p>
-                        </li>
-                        <li>
-                            Ensino Médio
-                            <p>2014 - 2016</p>
-                            <p>Lourival Gomes Machado</p>
-                        </li>
+                        <Formacao props={props.sobre.formacao}/>
                     </ul>
                 </div>
                 <div className="cursos">
                     <h3>Cursos</h3>
                     <ul>
-                        <li className="atual">
-                            Trilha Fundamentar - Fundamentar
-                            <p>Atualmente</p>
-                            <p>Rocketseat</p>
-                        </li>
-                        <li>
-                            Trilha Conectar - Discover
-                            <p>2022 - 2h23</p>
-                            <p>Rocketseat</p>
-                        </li>
-                        <li>
-                            Produções de Websites Expert - Front-End
-                            <p>2021 - 100 horas</p>
-                            <p>Senac</p>
-                        </li>
+                        <Cursos props={props.sobre.cursos}/>
                     </ul>
                 </div>
             </section>
@@ -58,5 +36,44 @@ function Sobre(props){
             </>
     )
 }
+
+function Formacao(props){
+    return(
+        props.props.map((formacao) =>{
+            return(
+                <li>
+                    {formacao.curso}
+                    <p>{formacao.periodo}</p>
+                    <p>{formacao.instituicao}</p>
+                </li>
+            )
+        })
+    )
+}
+
+function Cursos(props){
+    return(
+        props.props.map((curso) =>{
+                if(curso.curso == "Trilha Fundamentar - Discover"){
+                    return(
+                    <li className="atual">
+                        {curso.curso}
+                        <p>{curso.periodo}</p>
+                        <p>{curso.instituicao}</p>
+                    </li>
+                    )
+                }else{
+                    return(
+                        <li>
+                            {curso.curso}
+                            <p>{curso.periodo}</p>
+                            <p>{curso.instituicao}</p>
+                        </li>
+                    )
+                }
+        })
+    )
+}
+
 
 export default Sobre

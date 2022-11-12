@@ -75,12 +75,12 @@
         ],
         "cursos": [
             {
-                "curso": "Trilha Fundamentar - Fundamentar",
+                "curso": "Trilha Fundamentar - Discover",
                 "periodo": "Atualmente",
                 "instituicao" : "Rocketseat"
             },
             {
-                "curso": "Trilha Fundamentar - Discover",
+                "curso": "Trilha Conectar - Discover",
                 "periodo": "2022 - 2h23",
                 "instituicao" : "Rocketseat"
             },
