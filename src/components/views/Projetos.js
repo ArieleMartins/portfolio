@@ -4,7 +4,7 @@ import styled from "styled-components"
 const StyledGridProjects = styled.div`
 width: 1002px;
 display:flex;
-background-color: #111018;
+background-color:${({theme}) => theme.backgroundContainer};
 border: 2px solid #312F34;
 border-radius: 20px;
 .container-grid {

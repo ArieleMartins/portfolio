@@ -10,6 +10,11 @@ const StyleContainer = styled.div`
     display: flex;
     justify-content: space-around;
     padding: 25px 0px;
+    @media(max-width:1325){
+        flex-direction: column;
+        justify-content: inherit !important;
+        flex-direction: column-reverse !important;
+    }
 
 `
 const StyleFlex = styled.div`
@@ -18,6 +23,16 @@ const StyleFlex = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+
+    @media(max-width:1325px){
+        row-gap: 0px;
+        height: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
 `
 
 function HomePage(){
@@ -29,7 +44,6 @@ function HomePage(){
             <StyleContainer>
                 <Main dados={config}/>
                 <StyleFlex>
-                    
                     <Header setVisible={setVisible}/>
                     {
                         visible ?(

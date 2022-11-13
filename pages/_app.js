@@ -11,7 +11,9 @@ const theme = {
         colorBorder: '#312F34',
         backCargo: '#312F34',
         backgroundTheme: "white",
-        colorBallTheme:"#333333"
+        colorBallTheme:"#333333",
+        cursoFontColor: '#FFDF6C',
+        colorBarraProgress: '#2b2a33'
     },
     light:{
         backgroundBase: 'rgba(0 ,0 ,0 ,0.1)',
@@ -20,7 +22,9 @@ const theme = {
         colorBorder: 'black',
         backCargo: 'black',
         backgroundTheme: '#333333',
-        colorBallTheme: 'white'
+        colorBallTheme: 'white',
+        cursoFontColor: '#8b71d1',
+        colorBarraProgress: '#5f5f5f'
     }
 
 };

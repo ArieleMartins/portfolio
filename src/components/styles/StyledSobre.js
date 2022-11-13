@@ -32,6 +32,7 @@ row-gap: 15px;
 }
 .container-text-sobre p{
     width: 500px;
+    line-height: 23px;
 }
 .container-text-sobre h1{
     border-left: 6px solid #9C354A;
@@ -40,6 +41,7 @@ row-gap: 15px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    font-size:25px;
 }
 .objetivo{
     color: #9C354A;
@@ -75,12 +77,12 @@ row-gap: 15px;
     justify-content: center;
 }
 .formacao p, .cursos p{
-    color:white;
+    color:${({theme}) => theme.fontColor};
     font-size: 14px;
     margin-left: 15px;
 }
 .atual{
-    color:#FFDF6C;
+    color:${({theme}) => theme.cursoFontColor};
 }
 
 @keyframes animacao{
@@ -91,7 +93,9 @@ row-gap: 15px;
         transform: translateY(-20px);
     }
 }
-
+@media(max-width:1325px){
+        display: none;
+}
 `
 
 export default StyledSobre

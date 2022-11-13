@@ -93,7 +93,7 @@ border-radius: 20px;
 .barra{
     width: 100%;
     height: 9px;
-    background-color: #2b2a33;
+    background-color: ${({theme}) => theme.colorBarraProgress};
     border-radius: 10px;
 }
 .progresso{
@@ -221,6 +221,13 @@ border-radius: 20px;
 .container-desenvolvedores p{
     font-size: 14px;
 }
+
+@media(max-width:1325px){
+    width: 100%;
+    border-radius:0;
+    border-color:#111018;
+}
+
 
 `;
 

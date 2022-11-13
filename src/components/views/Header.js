@@ -1,5 +1,4 @@
 import StyledHeader from "../styles/StyledHeader"
-import React from "react"
 
 function Header(props){
 
