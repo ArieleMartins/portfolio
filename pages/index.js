@@ -10,10 +10,10 @@ const StyleContainer = styled.div`
     display: flex;
     justify-content: space-around;
     padding: 25px 0px;
-    @media(max-width:1325){
-        flex-direction: column;
+    @media(max-width:1325px){
         justify-content: inherit !important;
         flex-direction: column-reverse !important;
+        padding: 0;
     }
 
 `

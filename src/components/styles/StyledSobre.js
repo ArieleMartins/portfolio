@@ -94,7 +94,45 @@ row-gap: 15px;
     }
 }
 @media(max-width:1325px){
-        display: none;
+    .container-sobre{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        column-gap: 0px;
+        padding: 30px 0px;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        
+    }
+    .container-text-sobre p{
+        width: 92vw;
+        font-size: 13px;
+    }
+    .container-formacao{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+        height: 100%;
+        width: 100vw;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 14px;
+        display: flex;
+    }
+    .cursos{
+        border-left: none;
+        border-top: 2px solid #312F34;
+        padding: 20px 40px;
+    }
+    .container-img-sobre figure{
+        max-width: 300px;
+    }
+        
 }
 `
 

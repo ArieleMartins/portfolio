@@ -14,6 +14,23 @@ border-radius: 20px;
     row-gap: 20px;
     padding: 20px;
 }
+
+@media(max-width: 1325px){
+    display:flex;
+    width: 100%;
+    border-color:#111018;
+    height: 800px;
+    justify-content: center;
+    row-gap: 30px;
+        
+    .container-grid{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 30px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+}
 `
 
 function Projetos(props){

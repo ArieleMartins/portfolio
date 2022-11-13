@@ -180,6 +180,47 @@ const StyledProjetos = styled.div`
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3), 0 0 29px rgb(196, 77, 101);
 }
 
+@media(max-width:1325px){
+
+    .container-imagem figure {
+        width: 278px;
+        height: 155px;
+    }
+    .container-projeto {
+        width: 278px;
+        height: 346px;
+    }
+    .container-links .container-play .play {
+        padding: 3px 20px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .container-desc-links h3{
+        font-size: 15px;
+    }
+    .repo-github {
+        height: 30px;
+        padding: 3px 5px;
+        font-size: 16px;
+    }
+    .container-desc-links {
+        width: 278px;
+        height: 190px;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    
+    }
+    .tecnologias ul {
+        font-size: 12px;
+    }
+    .desc p {
+        font-size: 12px;
+    }
+}
+
+
 `
 
 export default StyledProjetos

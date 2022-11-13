@@ -34,7 +34,7 @@ export const CSSReset = createGlobalStyle`
 
   @media(max-width:1325px){
     .container-formacao, .container-sobre{
-        display: none;
+        display: none !important;
     }
 
     body{

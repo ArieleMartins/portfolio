@@ -28,10 +28,10 @@ height: 56px;
 }
 
 @media(max-width:1325px){
-    width: 100vw;
-    border-radius: 0;
-    background-color:#353535;
-    border:none;
+    width: 100%;
+    border-radius: 0 !important;
+    background-color:#353535 !important;
+    border:none !important;
     font-size: 13px;
     padding: 0;
 
@@ -49,7 +49,7 @@ height: 56px;
         width: 100vw;
     }
     .a-sobre, .a-projetos{
-        background-color: #474747;
+        background-color: #474747 !important;
     }
     .menu ul li{
         height: 46px;
