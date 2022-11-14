@@ -94,8 +94,10 @@ row-gap: 15px;
     }
 }
 @media(max-width:1325px){
+    .container-formacao, .container-sobre{
+        display: none;
+    }
     .container-sobre{
-        display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -122,7 +124,6 @@ row-gap: 15px;
         border-left: none;
         border-right: none;
         font-size: 14px;
-        display: flex;
     }
     .cursos{
         border-left: none;
@@ -134,6 +135,7 @@ row-gap: 15px;
     }
         
 }
+
 `
 
 export default StyledSobre

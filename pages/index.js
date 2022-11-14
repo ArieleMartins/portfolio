@@ -37,7 +37,7 @@ const StyleFlex = styled.div`
 
 function HomePage(){
     const [visible, setVisible] = React.useState(false)
-
+    
     return (
         <>
             

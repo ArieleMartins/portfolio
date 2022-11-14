@@ -16,7 +16,7 @@ border-radius: 20px;
 }
 
 @media(max-width: 1325px){
-    display:none;
+    display:flex;
     width: 100%;
     border-color:#111018;
     height: 800px;

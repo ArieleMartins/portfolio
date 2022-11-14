@@ -1,10 +1,11 @@
 
 import styled from "styled-components"
 import StyledSobre  from "../styles/StyledSobre"
+
 function Sobre(props){
     return (
         <>
-        <StyledSobre>
+        <StyledSobre id="c-sobre">
         <section className="container-sobre" id="container-sobre">
                 <div className="container-img-sobre">
                     <figure>

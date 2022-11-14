@@ -16,7 +16,7 @@ const theme = {
         colorBarraProgress: '#2b2a33',
         mediaFontColor:'white',
         mediaFontColorActive: 'white',
-        mediaBackgroundColorActive: '#11108',
+        mediaBackgroundColorActive: '#111018',
         mediaBackgroundColor: '#474747',
         mediaColorBorder: '#111018'
     },
