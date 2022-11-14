@@ -13,7 +13,12 @@ const theme = {
         backgroundTheme: "white",
         colorBallTheme:"#333333",
         cursoFontColor: '#FFDF6C',
-        colorBarraProgress: '#2b2a33'
+        colorBarraProgress: '#2b2a33',
+        mediaFontColor:'white',
+        mediaFontColorActive: 'white',
+        mediaBackgroundColorActive: '#11108',
+        mediaBackgroundColor: '#474747',
+        mediaColorBorder: '#111018'
     },
     light:{
         backgroundBase: 'rgba(0 ,0 ,0 ,0.1)',
@@ -24,7 +29,12 @@ const theme = {
         backgroundTheme: '#333333',
         colorBallTheme: 'white',
         cursoFontColor: '#8b71d1',
-        colorBarraProgress: '#5f5f5f'
+        colorBarraProgress: '#5f5f5f',
+        mediaFontColor:'white',
+        mediaFontColorActive: 'black',
+        mediaBackgroundColorActive: 'white',
+        mediaBackgroundColor: '#474747',
+        mediaColorBorder: 'white'
     }
 
 };

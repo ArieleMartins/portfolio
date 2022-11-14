@@ -48,8 +48,11 @@ height: 56px;
         justify-content: space-between;
         width: 100vw;
     }
-    .a-sobre, .a-projetos{
-        background-color: #474747 !important;
+    .principal:not(.active),.a-sobre:not(.active), .a-projetos:not(.active){
+        background-color: ${({theme}) => theme.mediaBackgroundColor} !important;
+    }
+    .principal.active,.a-sobre.active, .a-projetos.active{
+        background-color: ${({theme}) => theme.mediaBackgroundColorActive} !important;
     }
     .menu ul li{
         height: 46px;
@@ -59,7 +62,13 @@ height: 56px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     } 
-
+    .menu ul li:not(.active){
+        color:${({theme}) => theme.mediaFontColor};
+    
+    }
+    .menu ul li.active{
+        color:${({theme}) => theme.mediaFontColorActive} ;
+    }
 }
 
 

@@ -225,7 +225,7 @@ border-radius: 20px;
 @media(max-width:1325px){
     width: 100%;
     border-radius:0;
-    border-color:#111018;
+    border-color:${({theme}) => theme.mediaColorBorder};
 }
 
 
