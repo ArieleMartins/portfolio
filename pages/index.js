@@ -43,8 +43,8 @@ function HomePage(){
             
             <StyleContainer>
                 <Main dados={config}/>
-                <StyleFlex>
-                    <Header setVisible={setVisible}/>
+                <StyleFlex >
+                    <Header setVisible={setVisible} />
                     {
                         visible ?(
                             <Projetos projetos={config.projetos}/>

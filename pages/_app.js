@@ -60,8 +60,9 @@ function MyApp({ Component, pageProps}){
 
 export default function _App(props){
     return(
-        <ProviderWrapper>
-            <MyApp {...props}/>
+        <ProviderWrapper >
+            <MyApp {...props} />
         </ProviderWrapper>
     )
 };
+
